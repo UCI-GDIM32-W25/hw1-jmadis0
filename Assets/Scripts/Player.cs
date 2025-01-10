@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     private void Start ()
     {
-        
+       
     }
 
     private void Update()
@@ -30,10 +30,15 @@ public class Player : MonoBehaviour
          if (Input.GetKey(KeyCode.D))
         _playerTransform.Translate(Vector3.right * _speed * Time.deltaTime);
         
+        PlantSeed();
     }
 
     public void PlantSeed ()
     {
-        
+        if (Input.GetKey(KeyCode.Space))
+        {
+           Instantiate(_plantPrefab, _playerTransform.position, Quaternion.identity); 
+        }
+
     }
 }
