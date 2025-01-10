@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && _numSeedsLeft > 0)
         {
            Instantiate(_plantPrefab, transform.position, Quaternion.identity); 
+           _numSeedsLeft -= 1;
+           _numSeedsPlanted += 1;
         }
     }
 }

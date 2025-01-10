@@ -380,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 3
   _playerTransform: {fileID: 848378296}
-  _plantPrefab: {fileID: 2825838804505376073, guid: 3b8164c427c987041841ce4b97896da2, type: 3}
+  _plantPrefab: {fileID: 1402264827335161925, guid: 3b8164c427c987041841ce4b97896da2, type: 3}
   _numSeeds: 5
   _plantCountUI: {fileID: 1451940531}
 --- !u!212 &848378295
